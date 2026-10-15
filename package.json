@@ -1,0 +1,10 @@
+{
+  "name": "catalog-git-optional-peers-v12",
+  "version": "1.0.0",
+  "private": true,
+  "description": "pnpm 12.14.0 probe: catalog reuse, optional peers, git dependency",
+  "scripts": {
+    "test": "echo ok"
+  },
+  "devDependencies": {}
+}
