@@ -1,0 +1,10 @@
+{
+  "name": "@probe/core",
+  "version": "1.0.0",
+  "description": "Core library: catalog deps + git dependency",
+  "dependencies": {
+    "is-positive": "github:kevva/is-positive#v3.1.0",
+    "typescript": "catalog:",
+    "zod": "catalog:"
+  }
+}
