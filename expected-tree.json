@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-10-15T14:02:07Z",
+  "packages": {
+    "@probe/app": {
+      "dependencies": [
+        "react",
+        "zod"
+      ],
+      "group": "main",
+      "source": "local",
+      "source_detail": {
+        "workspace": "packages/app"
+      },
+      "version": "1.0.0"
+    },
+    "@probe/core": {
+      "dependencies": [
+        "is-positive",
+        "typescript",
+        "zod"
+      ],
+      "group": "main",
+      "source": "local",
+      "source_detail": {
+        "workspace": "packages/core"
+      },
+      "version": "1.0.0"
+    },
+    "is-positive": {
+      "dependencies": [],
+      "group": "main",
+      "source": "git",
+      "source_detail": {
+        "commit": "3f1abdd867e5571e4250be3c3c8df4d0af89c92f",
+        "ref": "v3.1.0",
+        "url": "https://github.com/kevva/is-positive.git"
+      },
+      "version": "3.1.0"
+    },
+    "js-tokens": {
+      "dependencies": [],
+      "group": "main",
+      "source": "registry",
+      "version": "4.0.0"
+    },
+    "loose-envify": {
+      "dependencies": [
+        "js-tokens"
+      ],
+      "group": "main",
+      "source": "registry",
+      "version": "1.4.0"
+    },
+    "react": {
+      "dependencies": [
+        "loose-envify"
+      ],
+      "group": "main",
+      "source": "registry",
+      "version": "18.3.1"
+    },
+    "typescript": {
+      "dependencies": [],
+      "group": "main",
+      "source": "registry",
+      "source_detail": {
+        "catalog": "default",
+        "catalog_specifier": "^5.4.5"
+      },
+      "version": "5.4.5"
+    },
+    "zod": {
+      "dependencies": [],
+      "group": "main",
+      "source": "registry",
+      "source_detail": {
+        "catalog": "default",
+        "catalog_specifier": "^3.23.8"
+      },
+      "version": "3.23.8"
+    }
+  },
+  "pm": "pnpm",
+  "pm_version_tested": "12.14.0",
+  "root": {
+    "dependencies": [
+      "@probe/app",
+      "@probe/core"
+    ],
+    "name": "catalog-git-optional-peers-v12",
+    "version": "1.0.0"
+  },
+  "schema_version": "1.0",
+  "source_file": "pnpm-lock.yaml",
+  "warnings": [
+    "react-dom is declared as an optional peerDependency of react@18.3.1 but is absent from pnpm-lock.yaml snapshots (not installed). It is intentionally excluded from this tree per pnpm 12.14.0 optional-peer rules.",
+    "catalog: specifiers in importer entries are resolved via catalogs.default block; the literal 'catalog:' string must never appear as a package version in Mend output."
+  ]
+}
