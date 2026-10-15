@@ -1,0 +1,11 @@
+{
+  "name": "@probe/app",
+  "version": "1.0.0",
+  "description": "App: catalog dep + optional peer dep exercise",
+  "dependencies": {
+    "react": "^18.3.1",
+    "zod": "catalog:"
+  },
+  "peerDependencies": {},
+  "devDependencies": {}
+}
