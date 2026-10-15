@@ -1,0 +1,102 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+catalogs:
+  default:
+    zod:
+      specifier: ^3.23.8
+      version: 3.23.8
+    typescript:
+      specifier: ^5.4.5
+      version: 5.4.5
+
+importers:
+
+  .:
+    devDependencies: {}
+
+  packages/core:
+    dependencies:
+      is-positive:
+        specifier: github:kevva/is-positive#v3.1.0
+        version: github.com/kevva/is-positive/3f1abdd867e5571e4250be3c3c8df4d0af89c92f
+      typescript:
+        specifier: 'catalog:'
+        version: 5.4.5
+      zod:
+        specifier: 'catalog:'
+        version: 3.23.8
+
+  packages/app:
+    dependencies:
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      zod:
+        specifier: 'catalog:'
+        version: 3.23.8
+
+packages:
+
+  is-positive@github.com/kevva/is-positive/3f1abdd867e5571e4250be3c3c8df4d0af89c92f:
+    resolution:
+      type: git
+      repo: https://github.com/kevva/is-positive.git
+      commit: 3f1abdd867e5571e4250be3c3c8df4d0af89c92f
+    name: is-positive
+    version: 3.1.0
+
+  js-tokens@4.0.0:
+    resolution:
+      integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
+  loose-envify@1.4.0:
+    resolution:
+      integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f8ZWR+wTgTo1de4G6A==
+    hasBin: true
+
+  react@18.3.1:
+    resolution:
+      integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2g==
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      react-dom:
+        version: '*'
+        optional: true
+
+  typescript@5.4.5:
+    resolution:
+      integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHw==
+    engines:
+      node: '>=14.17'
+    hasBin: true
+
+  zod@3.23.8:
+    resolution:
+      integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzydHDJQ==
+
+snapshots:
+
+  is-positive@github.com/kevva/is-positive/3f1abdd867e5571e4250be3c3c8df4d0af89c92f:
+    {}
+
+  js-tokens@4.0.0:
+    {}
+
+  loose-envify@1.4.0:
+    dependencies:
+      js-tokens: 4.0.0
+
+  react@18.3.1:
+    dependencies:
+      loose-envify: 1.4.0
+
+  typescript@5.4.5:
+    {}
+
+  zod@3.23.8:
+    {}
